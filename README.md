@@ -2,6 +2,10 @@
 
 ![Beautiful Hugo Theme Screenshot](https://github.com/halogenica/beautifulhugo/blob/master/images/screenshot.png)
 
+## Live demo
+
+See https://hugo-theme-beautifulhugo.netlify.app/
+
 ## Installation
 
     $ mkdir themes
@@ -150,7 +154,18 @@ content/      content/      content/
     └── post/     └── post/     └── post/
 
 ```
- 
+
+### Self Hosted assets for GDPR / EU-DSGVO compliance
+
+With default settings, visiting to a website using Beautifulhugo connects also to remote services like google fonts or jsdelivr to embed fonts, js and other assets.
+
+To avoid this, set the following param in config.toml:
+
+```
+[Params]
+  selfHosted = true
+```
+
 ### Extra shortcodes
 
 There are two extra shortcodes provided (along with the customized figure shortcode):
